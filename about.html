@@ -3,12 +3,12 @@
 <title>Anabas Home</title>
 <link rel=stylesheet
 href="style.css" type="text/css">
-
 <script>
-if (navigator.appName=="Netscape") {
-	document.location="netscape/index.html"
+	if (navigator.appName=="Netscape") {
+		document.location="netscape/about.html"
 }
 </script>
+
 
 <script language="javascript">
 <!--
@@ -29,26 +29,11 @@ function mClk(src){
 		src.children.tags('A')[0].click();
 }
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
 function MM_findObj(n, d) { //v3.0
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 
 function MM_showHideLayers() { //v3.0
@@ -66,23 +51,36 @@ function tmt_findObj(n){
 	x=eval("parent.frames['"+t[1]+"'].document.getElementById('"+t[0]+"')");
 	}else{x=document.getElementById(n)}return x;
 }
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
 //-->
 </script>
 
 
 </head>
 
-<body bgcolor="#000099" onLoad="MM_preloadImages('images/confOver.gif','images/clasOver.gif')" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
-<table cellpadding="0" cellspacing="0" border="0" width="640" height="84" bgcolor="#FFFFFF" align="center">
-  <tr height="84">								
-					<td><img src="images/anabas.gif" width="644" height="84" border="0"></td>					
-				</tr>
-			</table>
-		<tr>
+<body bgcolor="#000099" " text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+
+<table bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" width="644" height="84">        		
+	<tr height="84">								
+		<td><a href="index.html"><img src="images/anabas.gif" width="644" height="84" border="0"></a></td>	
+	<tr>
 		<td>
-			
-    <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" border="0" width="640" valign="top" align="center">
-      <tr>
+			<table cellpadding="0" cellspacing="0" border="0" width="644">
+        		  <tr>
 					<td height="1"></td>
 				</tr>
 				<tr>
@@ -94,13 +92,13 @@ function tmt_findObj(n){
                 			<tr>
               					<TD WIDTH="122"></TD>
 								<TD WIDTH="1" bgcolor="#333399"></TD>
-								<td WIDTH="80" ALIGN="CENTER"><span class="blues">Home</span></td>
+								<td WIDTH="80" bgcolor="#333399" ALIGN="CENTER"  onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="index.html"><span class="white">Home</span></a></td>
 								<td width="1" bgcolor="#333399"></td>                				
                 				<td WIDTH="80" bgcolor="#333399" ALIGN="CENTER"  onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="services.html"><span class="white"> Services </span></a> </td>
 								<td width="1"><img src="images/white.gif" width="1" height="12"></td>
-								<td WIDTH="80" bgcolor="#333399" ALIGN="CENTER"  onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="technology.html"><span class="white"> Technology </span></a> </td>
+								<td WIDTH="80" ALIGN="CENTER"  bgcolor="#333399" onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="technology.html"><span class="white"> Technology </span> </a></td>
 								<td width="1"><img src="images/white.gif" width="1" height="12"></td>
-								<td WIDTH="80" bgcolor="#333399" ALIGN="CENTER"  onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="about.html"><span class="white"> About Us </span></a> </td>
+								<td WIDTH="80" ALIGN="CENTER"><span class="blues"> About Us </span> </td>
               					<td width="1"><img src="images/white.gif" width="1" height="12"></td>
 								<td WIDTH="80" bgcolor="#333399" ALIGN="CENTER"  onmouseover='mOvr(this,"#0000CC");' onmouseout='mOut(this,"#333399");' onclick="mClk(this);"><a href="contact.html"><span class="white"> Contact </span></a> </td>
               					<TD WIDTH="1"></TD>
@@ -139,13 +137,13 @@ function tmt_findObj(n){
 							<tr>
               					<TD height="3" bgcolor="#333399"></TD>
 								<TD bgcolor="#333399"></TD>
-								<td bgcolor="#CC9900"></td>
+								<td bgcolor="#FFCC00"></td>
 								<td bgcolor="#333399"></td>                				
                 				<td bgcolor="#FFCC00"> </td>
 								<td bgcolor="#333399"></td>
 								<td bgcolor="#FFCC00"> </td>
 								<td bgcolor="#333399"></td>
-								<td bgcolor="#FFCC00"> </td>
+								<td bgcolor="#CC9900"> </td>
               					<td bgcolor="#333399"></td>
 								<td bgcolor="#FFCC00"> </td>
               					<TD bgcolor="#333399"></TD>
@@ -159,69 +157,67 @@ function tmt_findObj(n){
 					<td height="1" bgcolor="#333399"></td>
 				</tr>	
 				<tr>
-				    <td width="640" valign="top"> 
-            <table cellpadding="0" cellspacing="0" border="0" width="644">
-              <tr>
-								
-                <td width="77" valign="top"><img src="images/pattern.jpg" width="77" height="290" align="top"></td>
-								
-                <td width="240" class="content"> <span class="content"><b>Anabas, 
-                  Inc.</b> provides the next-generation of collaboration software platforms enabling a new class of 
-				  interactive, rich-media capable collaborative applications.  Whether via wired or wireless access,
-				  our products unify synchronous and asynchronous information sharing, providing integrated information 
-				  management enhancing communication efficiency and effectiveness for any transaction that requires 
-				  bridging people and building relationships. <br>
-                  <br>
-                  </span> </td>
-									
-								<td width="350">
-									<table width="300" border="0" align="center">
+					<td width="640">
+						<table width="640" cellpadding="0" cellspacing="0" border="0">
+                    		<tr>
+								<td width="77" valign="top"><img src="images/pattern.jpg" width="77" height="290"></td>											
+                       			<td width="502" height="320" valign="top">  
+									<table cellpadding="0" border="0" cellspacing="0" width="560" height="50">
+                            			<tr>
+                              				<td height="50" valign="top">
+												<table cellpadding="0" cellspacing="0" border="0" width="567" height="50">
+                          							<tr>
+														<td><img src="images/about.gif" width="190" height="30"></td>
+						    						</tr>
+												</table>
+											</td>
+                            			</tr>
 										<tr>
 											<td>
-                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="350" height="350">
-                          <param name=movie value="images/home.swf">
-                          <param name=quality value=high>
-                          <embed src="images/home.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="350" height="350">
-                          </embed> 
-                        </object></td>
-										</tr>																	
+                                				<table cellpadding="0" cellspacing="0" border="0" width="560" height="160">
+                                  					<tr>
+														<td width="25"></td>														
+                                    					<td width="502" valign="top">  <span class="content"> Anabas' mission is to maximize the efficacy of rich-media sharing for business collaboration and knowledge sharing. Anabas is founded by successful entrepreneurs and technologists in the Internet media technology space from IBM, Caltech, Cornell, Stanford and Berkeley.  
+                              </span>
+                              </td>
+														
+													</tr>
+												</table>
+											</td>
+										</tr>
 									</table>
-								</td>								
+								</td>
 							</tr>
 						</table>
 					</td>
-				</tr>	
+					<td width="25"></td>										
+				</tr>					
 				<tr>
 					<td height="55" width="640" align="center"> 												
-            			<table cellpadding="0" cellspacing="0" border="0" width="644" height="55" bgcolor="#000099" valign="bottom">
+            			<table cellpadding="0" cellspacing="0" border="0" width="644" height="55" bgcolor="#000099">
              				<tr>								
                 				<td align="center" height="20"> 									
-                  					<table cellpadding="0" bgcolor="#999999" border="0" cellspacing="1" align="center" width="400" height="13">
+                  					<table cellpadding="0" border="0" cellspacing="1" align="center" width="400" bgcolor="#CCCCCC" height="13">
                     					<tr>	                    						
-                      						<td bgcolor="#0153DC" align="center"><span class="whites"><b>Home</b></span></td>
+                      						<td bgcolor="#000099" ALIGN="CENTER" onmouseover='mOvr(this,"#3366ff");' onmouseout='mOut(this,"#000099");' onclick="mClk(this);"><a href="index.html"><span class="whites"><b>Home</b></span></a></td>
 											<td bgcolor="#000099" ALIGN="CENTER" onmouseover='mOvr(this,"#3366ff");' onmouseout='mOut(this,"#000099");' onclick="mClk(this);"><a href="services.html"><span class="whites"> Services </span></a></td>
 											<td bgcolor="#000099" ALIGN="CENTER" onmouseover='mOvr(this,"#3366ff");' onmouseout='mOut(this,"#000099");' onclick="mClk(this);"><a href="technology.html"><span class="whites"> Technology </span></a> </td>
-											<td bgcolor="#000099" ALIGN="CENTER" onmouseover='mOvr(this,"#3366ff");' onmouseout='mOut(this,"#000099");' onclick="mClk(this);"><a href="about.html"><span class="whites"> About Us </span></a></td>
+											<td bgcolor="#0153DC" ALIGN="CENTER"><span class="whites"> About Us </span></td>
 											<td bgcolor="#000099" ALIGN="CENTER" onmouseover='mOvr(this,"#3366ff");' onmouseout='mOut(this,"#000099");' onclick="mClk(this);"><a href="contact.html"><span class="whites"> Contact </span></a></td>
                   						</tr>
 									</table>
 								</td>								
 							</tr>
 							<tr>								
-                				<td height="14" align="center">
-								
-                  <div class="whites"><span class="whites">Copyright © 2000-2001</span> 
-                    <a href="index.html"><span class="lblue">Anabas Inc.</span></a> 
-                    <span class="whites">All rights reserved.</span></div>
+                				<td height="17" align="center">
+								<div class="white"><span class="whites">Copyright © 2000-2001</span> <a href="index.html"><span class="lblue">Anabas Inc.</span></a> <span class="whites">All rights reserved.</span></div>
 								</td>
 							</tr>
 							<tr>
-								<td height="20">
-									<table align="center" cellpadding="0" cellspacing="0" border="0" width="300" height="20">
+								<td height="17">
+									<table align="center" cellpadding="0" cellspacing="0" border="0" width="300" height="29">
                     					<tr align="center">
-											
-                      <td align="center" height="25" width="150" class="bottom"><a href="privacy.html"><span class="bottom"> 
-                        PRIVACY </span></a></td>
+											<td align="center" height="25" width="150"><a href="privacy.html"><span class="bottom"> PRIVACY  </span></a></td>
 											<td align="center" width="150"><a href="legal.html"><span class="bottom">  LEGAL </span></a></td>
 										</tr>
 									</table>
@@ -231,7 +227,11 @@ function tmt_findObj(n){
 					</td>					
 				</tr>
 			</table>
-	
+		</td>			
+   
+	</tr>
+</table>
 
+<span class="whitem"></span>
 </body>
 </html>
